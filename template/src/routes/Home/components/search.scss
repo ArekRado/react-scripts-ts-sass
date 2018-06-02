@@ -1,0 +1,13 @@
+@import '~styles/base';
+
+.container {
+  width: 100%;
+}
+
+.input {
+  @include size(100%, 50px);
+  @include font(h6);
+
+  border-radius: 30px;
+  border: none;
+}

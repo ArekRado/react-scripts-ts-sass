@@ -1,0 +1,72 @@
+@import '~styles/base';
+
+.container {
+  @include flex();
+  @include card();
+}
+
+.content {
+  @include flex(column, $justify: space-between);
+  @include p(1);
+
+  flex: 2;
+}
+
+.image {
+  @include size(300px, 300px);
+
+  background-color: $color-gray-light;
+  flex: 1;
+}
+
+.priceLabel {
+  color: $color-gray;
+}
+
+.price {
+  color: $color-red;
+}
+
+.goBackButton {
+  @include font(btn);
+  @include hover() {
+    cursor: pointer;
+  }
+
+  float: right;
+  text-decoration: none;
+  background: linear-gradient(45deg, $color-blue-lighter 0%, $color-blue 100%);
+  border: none;
+  border-radius: 30px;
+  padding: 5px 15px;
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+.ingredients {
+  height: 22px;
+  margin: 0 -4px;
+
+  @include my(1);
+}
+
+.ingredient {
+  @include font(badge, $color-white);
+
+  padding: 4px 8px;
+  margin: 2px;
+  background-color: $color-red;
+  border-radius: 30px;
+}
+
+.adjective {
+  color: $color-gray;
+}
+
+.description {
+  color: $color-gray;
+}
+
+.h3 {
+  @include font(h3);
+}

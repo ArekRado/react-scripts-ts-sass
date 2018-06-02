@@ -1,0 +1,29 @@
+@import '~styles/base';
+
+.logo {
+  animation: logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.header {
+  text-align: center;
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.content {
+  @include m(1, auto);
+
+  max-width: 900px;
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

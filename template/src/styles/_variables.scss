@@ -1,0 +1,212 @@
+// Variables
+// Palette
+$color-shade-amount: 15%;
+$color-trans-amount: 0.5;
+
+$color-transparent: transparent;
+$color-blue: #1736ff;
+$color-blue-lighter: #96a4ff;
+$color-orange: #fc8867;
+$color-orange-lighter: #fcc35d;
+$color-red: #fb4949;
+$color-black: #242222;
+$color-gray-darker: #2d2d2d;
+$color-gray-dark: #7c7575;
+$color-gray: #999;
+$color-gray-light: #c3c3c3;
+$color-gray-lighter: #f7f2ef;
+$color-white: #fff;
+$black: $color-black;
+$white: $color-white;
+
+$color-primary-darker: #2d2d2d;
+$color-primary-dark: #7c7575;
+$color-primary: #999;
+$color-primary-light: #e6e6e6;
+$color-primary-lighter: #fafafa;
+
+$color-secondary: blue;
+$color-secondary-dark: darken($color-secondary, $color-shade-amount);
+$color-secondary-light: lighten($color-secondary, $color-shade-amount);
+$color-secondary-trans: transparentize($color-secondary, $color-trans-amount);
+
+$color-success: #6acb00;
+$color-error: #ed1a3b;
+$color-warning: #ffb11f;
+
+// Bootstrap reboot
+$enable-hover-media-query: false;
+
+$headings-margin-bottom: 8px;
+$font-family-base: 'proxima-nova', Arial, sans-serif;
+$font-family-secondary: 'proxima-nova-extra-condensed', Arial, sans-serif;
+$font-size-base: 16px; // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$font-weight-base: normal;
+$line-height-base: $font-size-base;
+$dt-font-weight: $font-weight-base;
+
+$body-color: $color-black;
+$body-bg: $color-white;
+$text-muted: $color-gray-light;
+
+$link-color: $color-secondary;
+$link-decoration: none;
+$link-hover-color: $link-color;
+$link-hover-decoration: underline;
+
+$table-cell-padding: 0;
+$paragraph-margin-bottom: 0;
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);
+
+// Grid
+$grid-columns: 12;
+$grid-fluid: false;
+$grid-gutter-widths: (
+  down sm: 40px,
+  up md: 30px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+// Positioning
+$z-indexes: (
+  'modal',
+  'intercom',
+  'tooltip',
+  'body'
+);
+
+// Spacing
+$spacing-sizes: (
+  0: 0,
+  1: 15px,
+  2: 30px,
+  3: 50px,
+  4: 90px,
+  5: 120px,
+  6: 180px,
+  7: 200px,
+  8: 300px
+);
+$spacing-important: false;
+
+// Typography
+$typography: (
+  base:
+    (
+      base:
+        (
+          font-family: $font-family-base,
+          font-size: $font-size-base,
+          font-weight: 400,
+          line-height: 30px
+        )
+    ),
+  sm: (base: (font-family: $font-family-base, font-size: 16px, font-weight: 300, line-height: 36px)),
+  xs: (base: (font-family: $font-family-base, font-size: 12px, font-weight: 400, line-height: 24px)),
+  h1:
+    (
+      base:
+        (
+          font-family: $font-family-secondary,
+          font-size: 80px,
+          font-weight: 500,
+          line-height: 80px,
+          text-transform: uppercase
+        ),
+      lg: (font-size: 60px, line-height: 60px),
+      sm: (font-size: 40px, line-height: 40px)
+    ),
+  h2:
+    (
+      base:
+        (
+          font-family: $font-family-secondary,
+          font-size: 50px,
+          line-height: 55px,
+          font-weight: 300,
+          text-transform: uppercase
+        ),
+      md: (font-size: 40px, line-height: 44px)
+    ),
+  h3:
+    (
+      base:
+        (font-family: $font-family-secondary, font-size: 20px, line-height: 50px, font-weight: 500)
+    ),
+  h4:
+    (
+      base:
+        (
+          font-family: $font-family-secondary,
+          font-size: 36px,
+          line-height: 40px,
+          font-weight: 500,
+          letter-spacing: 1px,
+          text-transform: uppercase
+        ),
+      md: (font-size: 30px, line-height: 33px)
+    ),
+  h5:
+    (
+      base:
+        (
+          font-family: $font-family-base,
+          font-size: 14px,
+          font-weight: 700,
+          line-height: 38px,
+          letter-spacing: 2px,
+          text-transform: uppercase
+        ),
+      sm: (font-size: 11px, line-height: 30px)
+    ),
+  h6: (base: (font-family: $font-family-base, font-size: 24px, font-weight: 300, line-height: 42px)),
+  btn:
+    (
+      base:
+        (
+          font-family: $font-family-secondary,
+          font-size: 18px,
+          font-weight: 500,
+          letter-spacing: 2px,
+          text-transform: uppercase
+        ),
+      sm:
+        (
+          font-family: $font-family-base,
+          font-size: 14px,
+          font-weight: 700,
+          letter-spacing: 1px,
+          text-transform: uppercase
+        )
+    ),
+  nav: (base: (font-family: $font-family-secondary, font-size: 20px, font-weight: 500)),
+  badge: (base: (font-family: $font-family-secondary, font-size: 12px, font-weight: 500))
+);
+
+// Buttons
+$enable-rounded: true;
+$btn-focus-width: 2px;
+$enable-shadows: false;
+$btn-active-box-shadow: inset 0 3px 5px rgba($black, 0.125);
+$btn-box-shadow: inset 0 1px 0 rgba($white, 0.15), 0 1px 1px rgba($black, 0.075);
+
+// Gradients
+$enable-gradients: false;
+
+// Border radius
+$border-radius: 5px;

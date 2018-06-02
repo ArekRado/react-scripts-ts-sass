@@ -1,0 +1,26 @@
+@import "~styles/base";
+
+.container {
+  @include flex($wrap: wrap);
+  @include mt(2);
+}
+
+.button {
+  @include font(btn);
+  @include mb(1);
+  @include hover() {
+    cursor: pointer;
+  }
+
+  text-decoration: none;
+  background: $color-gray;
+  border: none;
+  border-radius: 30px;
+  padding: 5px 15px;
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+.active {
+  background: linear-gradient(45deg, $color-orange-lighter 0%, $color-orange 100%);
+}

@@ -1,0 +1,16 @@
+{
+  "name": "fake-api",
+  "version": "0.0.0",
+  "main": "start.js",
+  "author": "Arek",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "date-fns": "^1.29.0",
+    "eslint-config-react-app": "^2.1.0",
+    "faker": "^4.1.0",
+    "json-server": "^0.12.1",
+    "lowdb": "^1.0.0",
+    "ramda": "^0.25.0"
+  }
+}

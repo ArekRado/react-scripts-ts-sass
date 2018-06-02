@@ -1,0 +1,26 @@
+{
+  "extends": ["tslint-config-standard", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["config/**/*.js", "fake-api/**/*.js", "node_modules/**/*.ts"]
+  },
+  "rules": {
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never"
+      }
+    ],
+    "no-console": false,
+    "no-default-export": true,
+    "interface-name": [true, "never-prefix"],
+    "object-literal-sort-keys": false,
+    "interface-over-type-literal": false,
+    "no-var-requires": false,
+    "no-unused-expression": [true, "allow-fast-null-checks"],
+    "quotemark": [true, "single"],
+    "semicolon": [true, "never"],
+    "indent": [true, "spaces", 2],
+    "no-floating-promises": [false]
+  }
+}
